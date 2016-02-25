@@ -1705,7 +1705,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #333333; }
+  background: #2560FF; }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
@@ -1812,7 +1812,7 @@ meta.foundation-mq-topbar {
         .top-bar .toggle-topbar.menu-icon a span:hover:after {
           box-shadow: 0 0 0 1px "", 0 7px 0 1px "", 0 14px 0 1px ""; }
   .top-bar.expanded {
-    background: transparent;
+    background: #2560FF;
     height: auto; }
     .top-bar.expanded .title-area {
       background: #2560FF; }
@@ -4771,7 +4771,7 @@ blockquote p {
 
 .tab-bar {
   -webkit-backface-visibility: hidden;
-  background: #333333;
+  background: #2560FF;
   color: #FFFFFF;
   height: 2.8125rem;
   line-height: 2.8125rem;
