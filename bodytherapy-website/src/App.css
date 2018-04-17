@@ -1,2 +1,10 @@
 .hidden {
   display: none; }
+
+img {
+  width: 100%; }
+
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: "blue" !important; }

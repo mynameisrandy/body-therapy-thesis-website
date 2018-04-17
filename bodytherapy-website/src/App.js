@@ -6,6 +6,7 @@ import FeatureItemComponent from './components/feature-item/feature-item.compone
 import TechItemComponent from './components/tech-Item/tech-item.component';
 
 import messageTherapist from './assets/images/message-therapist.png';
+import bannerImage from './assets/images/hero-image.png';
 
 import './App.css';
 
@@ -65,7 +66,20 @@ class App extends Component {
             <div>
                 <HeaderComponent />
                 <section className="main-content">
+
                     <h1 className="hidden">Main Content</h1>
+
+                    <div className="container-fluid">
+                      <div className="row">
+                        <div className="col-12 col-md-6">
+                          <h2>We help people that need therapy.</h2>
+                        </div>
+                        <div className="col-12 col-md-6">
+                          <img src={bannerImage} alt="Hero Image" />
+                        </div>
+                      </div>
+                    </div>
+
                     <div className="container">
                         <div className="row">
                             <div className="col-12">

@@ -1,5 +1,15 @@
-@import "./shared.scss";
+@import "../src/assets/scss/shared.scss";
 
 .hidden {
-    display: none;
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: $default-font-family;
+  font-size: $default-font-size;
+  color: $primary-color !important;
 }
