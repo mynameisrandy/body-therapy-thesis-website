@@ -65,6 +65,7 @@ class App extends Component {
         return (
             <div>
                 <HeaderComponent />
+
                 <section className="main-content">
 
                     <h1 className="hidden">Main Content</h1>
@@ -134,6 +135,7 @@ class App extends Component {
                         </div>
                     </div>
                 </section>
+
                 <FooterComponent />
             </div>
         );
