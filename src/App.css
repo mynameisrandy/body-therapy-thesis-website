@@ -80,3 +80,54 @@ body {
   .available-on .secondary-title {
     text-align: center;
     color: #ffffff; }
+
+.technologies {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.about-me {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center; }
+  .about-me .resume-btn {
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: #ffffff;
+    background-color: #0080FF;
+    border: none;
+    border-radius: 20px; }
+  @media screen and (min-width: 768px) {
+    .about-me {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: left; }
+      .about-me .title-left {
+        margin-top: 10px; }
+      .about-me .title-left,
+      .about-me .secondary-title,
+      .about-me .body-text {
+        text-align: left; }
+      .about-me .resume-btn {
+        width: 200px; } }
+
+.available-on .available-on-links {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none; }
+  .available-on .available-on-links li {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .available-on .available-on-links li a img {
+      width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .available-on {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .available-on .available-on-links {
+      text-align: center; }
+      .available-on .available-on-links li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px; } }

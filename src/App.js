@@ -11,6 +11,8 @@ import bannerImage from './assets/images/hero-image.png';
 import reactLogo from './assets/images/react-logo.png';
 import reduxLogo from './assets/images/redux-logo.png';
 import firebaseLogo from './assets/images/firebase-logo.png';
+import googlePlay from './assets/images/google-play.png';
+import appStore from './assets/images/app-store.png';
 
 import './App.css';
 
@@ -159,10 +161,10 @@ class App extends Component {
                           </div>
 
                           <div className="col-12 col-md-8">
-                            <h2 className="title">Randy Phalla</h2>
+                            <h2 className="title title-left">Randy Phalla</h2>
                             <h3 className="secondary-title">Front End Developer / Graphic Designer</h3>
                             <p className="body-text">Lorem ipsum dolor sit amet, mandamus corrumpit reprehendunt te pri, veri quodsi vix an. Nam in abhorreant referrentur, his no inani aperiam efficiantur. Ceteros abhorreant id vim, ad nec choro apeirian. Ea sea denique phaedrum. Has ne duis conclusionemque, vel quando malorum an, te mei essent iuvaret facilisis. Oblique dissentias quaerendum duo ea, congue doming singulis vis ne, pro id nisl aliquam sanctus.</p>
-                            <button className="btn btn-primary">Resume</button>
+                            <button className="resume-btn">Resume</button>
                           </div>
                         </div>
 
@@ -175,9 +177,17 @@ class App extends Component {
                         <div className="row">
                               <div className="col-12">
                                   <h2 className="secondary-title">Available on</h2>
-                                  <ul>
-                                      <li></li>
-                                      <li></li>
+                                  <ul class="available-on-links">
+                                        <li>
+                                            <a href="#">
+                                                <img src={googlePlay} alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src={appStore} alt="" />
+                                            </a>
+                                        </li>
                                   </ul>
                               </div>
                           </div>

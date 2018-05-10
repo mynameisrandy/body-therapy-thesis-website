@@ -1,0 +1,13 @@
+.tech-logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+  .tech-logo img {
+    width: 50%; }
+  @media screen and (min-width: 576px) {
+    .tech-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .tech-logo img {
+        width: 70%; } }
