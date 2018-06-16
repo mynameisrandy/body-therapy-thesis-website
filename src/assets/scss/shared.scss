@@ -3,17 +3,20 @@
 @import "./mixins.scss";
 
 .title {
-  font-family: $default-font-family;
+  font-family: $lato;
+  font-weight: $font-weight-black;
   font-size: 1.8em;
 }
 
 .secondary-title {
-  font-family: $default-font-family;
+  font-family: $lato;
+  font-weight: $font-weight-bold;
   font-size: 1.5em;
 }
 
 .body-text {
-  font-family: $default-font-family;
+  font-family: $open-sans;
+  font-weight: $font-weight-thin;
   font-size: 1em;
   line-height: 1.8;
 }

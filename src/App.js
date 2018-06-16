@@ -11,8 +11,8 @@ import messageTherapist from './assets/images/message-therapist.png';
 import reactLogo from './assets/images/react-logo.png';
 import reduxLogo from './assets/images/redux-logo.png';
 import firebaseLogo from './assets/images/firebase-logo.png';
-import googlePlay from './assets/images/google-play.png';
-import appStore from './assets/images/app-store.png';
+import googlePlay from './assets/images/google-play-badge.png';
+import appStore from './assets/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg';
 
 import './App.css';
 
@@ -114,7 +114,7 @@ class App extends Component {
                         <FeatureItemComponent title="Message Therapist" body="body description" image={messageTherapist} rightSide="true" />
 
                         <FeatureItemComponent title="Message Therapist" body="body description" image={messageTherapist} />
-                        
+
                       </div>
                     </section>
 
@@ -145,12 +145,12 @@ class App extends Component {
                                     <ul className="available-on-links">
                                         <li>
                                             <a href="#">
-                                                <img src={googlePlay} alt="" />
+                                                <img src={googlePlay} alt="Google Play" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img src={appStore} alt="" />
+                                                <img src={appStore} alt="Apple Store" />
                                             </a>
                                         </li>
                                     </ul>
