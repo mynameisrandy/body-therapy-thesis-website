@@ -2,20 +2,20 @@
   font-family: "Lato", sans-serif;
   font-weight: "900";
   font-size: 1.8em;
-  color: #0080FF; }
+  color: #0080ff; }
 
 .secondary-title {
   font-family: "Lato", sans-serif;
   font-weight: "700";
   font-size: 1.5em;
-  color: #0080FF; }
+  color: #0080ff; }
 
 .body-text {
   font-family: "Open Sans", sans-serif;
   font-weight: "300";
   font-size: 1em;
   line-height: 1.8;
-  color: #3F3A3A; }
+  color: #3f3a3a; }
 
 .hidden {
   display: none; }
@@ -26,7 +26,7 @@ img {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  color: #0080FF; }
+  color: #0080ff; }
 
 @media screen and (min-width: 768px) {
   .show-mobile-only {
@@ -59,7 +59,7 @@ body {
 
 .available-on {
   padding: 30px 0;
-  background: linear-gradient(150deg, #0080FF, #3CC0FA); }
+  background: linear-gradient(150deg, #0080ff, #3cc0fa); }
   .available-on .secondary-title {
     text-align: center;
     color: #ffffff; }

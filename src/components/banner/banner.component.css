@@ -2,25 +2,25 @@
   font-family: "Lato", sans-serif;
   font-weight: "900";
   font-size: 1.8em;
-  color: #0080FF; }
+  color: #0080ff; }
 
 .secondary-title {
   font-family: "Lato", sans-serif;
   font-weight: "700";
   font-size: 1.5em;
-  color: #0080FF; }
+  color: #0080ff; }
 
 .body-text {
   font-family: "Open Sans", sans-serif;
   font-weight: "300";
   font-size: 1em;
   line-height: 1.8;
-  color: #3F3A3A; }
+  color: #3f3a3a; }
 
 .hero-banner {
   padding-top: 30px;
   padding-bottom: 30px;
-  background: linear-gradient(150deg, #0080FF, #3CC0FA); }
+  background: linear-gradient(150deg, #0080ff, #3cc0fa); }
   .hero-banner .hero-banner-text h2 {
     font-size: 2em;
     font-weight: 300;

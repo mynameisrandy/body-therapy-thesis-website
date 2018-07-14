@@ -1,25 +1,25 @@
-@import "./var.scss";
-@import "./font.scss";
-@import "./mixins.scss";
+@import './var.scss';
+@import './font.scss';
+@import './mixins.scss';
 
 .title {
-  font-family: $lato;
-  font-weight: $font-weight-black;
-  font-size: 1.8em;
-  color: $primary-color;
+	font-family: $lato;
+	font-weight: $font-weight-black;
+	font-size: 1.8em;
+	color: $primary-color;
 }
 
 .secondary-title {
-  font-family: $lato;
-  font-weight: $font-weight-bold;
-  font-size: 1.5em;
-  color: $primary-color;
+	font-family: $lato;
+	font-weight: $font-weight-bold;
+	font-size: 1.5em;
+	color: $primary-color;
 }
 
 .body-text {
-  font-family: $open-sans;
-  font-weight: $font-weight-thin;
-  font-size: 1em;
-  line-height: 1.8;
-  color: $black;
+	font-family: $open-sans;
+	font-weight: $font-weight-thin;
+	font-size: 1em;
+	line-height: 1.8;
+	color: $black;
 }

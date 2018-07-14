@@ -2,23 +2,23 @@
   font-family: "Lato", sans-serif;
   font-weight: "900";
   font-size: 1.8em;
-  color: #0080FF; }
+  color: #0080ff; }
 
 .secondary-title {
   font-family: "Lato", sans-serif;
   font-weight: "700";
   font-size: 1.5em;
-  color: #0080FF; }
+  color: #0080ff; }
 
 .body-text {
   font-family: "Open Sans", sans-serif;
   font-weight: "300";
   font-size: 1em;
   line-height: 1.8;
-  color: #3F3A3A; }
+  color: #3f3a3a; }
 
 .header {
-  background: linear-gradient(150deg, #0080FF, #3CC0FA); }
+  background: linear-gradient(150deg, #0080ff, #3cc0fa); }
   .header .mobile-view {
     padding-top: 10px;
     padding-bottom: 10px; }

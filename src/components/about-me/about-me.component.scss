@@ -1,41 +1,56 @@
-@import "../src/assets/scss/shared.scss";
+@import '../src/assets/scss/shared.scss';
 
 .about-me {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
 
-  .resume-btn {
-    width: 100%;
-    padding-top: 13px;
-    padding-bottom: 13px;
+	.about-me-cont {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
 
-    color: $white;
+	img {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 250px;
+		border-radius: 50%;
+	}
 
-    background-color: $primary-color;
-    border: none;
-    border-radius: 20px;
-  }
+	.resume-btn {
+		width: 100%;
+		padding-top: 13px;
+		padding-bottom: 13px;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: left;
+		color: $white;
 
-    .title-left {
-      margin-top: 10px;
-    }
+		background-color: $primary-color;
+		border: none;
+		border-radius: 20px;
+	}
 
-    .title-left,
-    .secondary-title,
-    .body-text {
-      text-align: left;
-    }
+	@media screen and (min-width: 768px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		text-align: center;
 
-    .resume-btn {
-      padding: 10px;
-      width: 200px;
-    }
-  }
+		img {
+			width: 100%;
+		}
+
+		.title-left {
+			margin-top: 10px;
+		}
+
+		.title-left,
+		.secondary-title,
+		.body-text {
+			text-align: left;
+		}
+
+		.resume-btn {
+			padding: 10px;
+			width: 200px;
+		}
+	}
 }
-
