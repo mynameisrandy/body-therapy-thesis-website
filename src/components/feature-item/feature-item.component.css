@@ -2,6 +2,8 @@
   padding: 40px 0; }
   .feature-item img {
     margin-bottom: 16px; }
+  .feature-item .feature-item-info {
+    padding-top: 20px; }
   @media screen and (min-width: 768px) {
     .feature-item img {
       margin-bottom: 0; }
@@ -10,6 +12,7 @@
       justify-content: center;
       align-items: left;
       flex-direction: column;
+      padding-top: 0;
       text-align: right; }
       .feature-item .feature-item-info.right-side {
         text-align: left !important; } }

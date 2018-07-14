@@ -1,3 +1,5 @@
+@import '../src/assets/scss/shared.scss';
+
 .footer {
 	padding: 20px 0;
 
@@ -15,6 +17,15 @@
 			margin: 0 6px;
 
 			a {
+        color: $primary-color;
+        font-family: $lato;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        letter-spacing: 0.3px;
+
+        &:hover {
+          opacity: 0.8;
+        }
 			}
 		}
 	}
@@ -27,7 +38,20 @@
 
 		li {
 			display: inline-flex;
-			margin: 0 6px;
+      margin: 0 6px;
+
+      a {
+        color: $primary-color;
+        font-size: 14px;
+        font-family:$open-sans;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        letter-spacing: 0.3px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
 		}
 	}
 
@@ -39,7 +63,20 @@
 
 		li {
 			display: inline-flex;
-			margin: 0 6px;
+      margin: 0 6px;
+
+      a {
+        color: $primary-color;
+        font-size: 14px;
+        font-family:$open-sans;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        letter-spacing: 0.3px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
 		}
 	}
 }

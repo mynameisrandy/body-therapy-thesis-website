@@ -27,15 +27,27 @@ class FooterComponent extends Component {
 							</ul>
 
 							<ul className="social-links">
-								<li>Twitter</li>
-								<li>Instagram</li>
-								<li>Facebook</li>
+								<li>
+									<a href="#">Twitter</a>
+								</li>
+								<li>
+									<a href="#">Instagram</a>
+								</li>
+								<li>
+									<a href="#">Facebook</a>
+								</li>
 							</ul>
 
 							<ul className="copyrights">
-								<li>&copy; 2018 Body Therapy </li>
-								<li>Privacy Policy</li>
-								<li>Terms of Service</li>
+								<li>
+                  <a href="#">&copy; 2018 Body Therapy</a>
+                </li>
+								<li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+								<li>
+                  <a href="#">Terms of Service</a>
+                </li>
 							</ul>
 						</div>
 					</div>

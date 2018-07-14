@@ -6,6 +6,7 @@
 	}
 
 	.feature-item-info {
+    padding-top: 20px;
 	}
 
 	@media screen and (min-width: 768px) {
@@ -17,7 +18,8 @@
 			display: flex;
 			justify-content: center;
 			align-items: left;
-			flex-direction: column;
+      flex-direction: column;
+      padding-top: 0;
 			text-align: right;
 
 			&.right-side {

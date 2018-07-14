@@ -17,6 +17,11 @@
 		border-radius: 50%;
 	}
 
+  .title-left {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
 	.resume-btn {
 		width: 100%;
 		padding-top: 13px;
@@ -39,13 +44,14 @@
 		}
 
 		.title-left {
-			margin-top: 10px;
+      margin-top: 10px;
+      font-size: 16px;
 		}
 
 		.title-left,
 		.secondary-title,
 		.body-text {
-			text-align: left;
+			text-align: left !important;
 		}
 
 		.resume-btn {
