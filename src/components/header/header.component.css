@@ -36,21 +36,28 @@
       .header .mobile-view .email .far {
         margin-top: 4px;
         color: #ffffff; }
+    @media screen and (min-width: 768px) {
+      .header .mobile-view {
+        display: none; } }
   .header .desktop-view {
-    padding-top: 10px;
-    padding-bottom: 10px; }
-    .header .desktop-view .logo img {
-      width: 150px; }
-    .header .desktop-view .nav-links ul {
-      padding-left: 0;
-      margin-top: 16px;
-      margin-bottom: 0;
-      list-style-type: none;
-      text-align: right; }
-      .header .desktop-view .nav-links ul li {
-        display: inline-block;
-        margin-left: 10px;
-        margin-right: 10px; }
-        .header .desktop-view .nav-links ul li a {
-          text-decoration: none;
-          color: #ffffff; }
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .header .desktop-view {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        .header .desktop-view .logo img {
+          width: 150px; }
+        .header .desktop-view .nav-links ul {
+          padding-left: 0;
+          margin-top: 16px;
+          margin-bottom: 0;
+          list-style-type: none;
+          text-align: right; }
+          .header .desktop-view .nav-links ul li {
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px; }
+            .header .desktop-view .nav-links ul li a {
+              text-decoration: none;
+              color: #ffffff; } }

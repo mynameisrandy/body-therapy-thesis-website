@@ -9,23 +9,27 @@ class HeaderComponent extends Component {
 				<div className="container mobile-view">
 					<div className="row">
 						<div className="col-3 menu">
-							<i className="fas fa-bars fa-2x" />
+              <button class="btn btn-link">
+                <i className="fas fa-bars fa-2x" />
+              </button>
 						</div>
-						<div className="col-6 logo">
+						<div className="col-6 logo d-flex align-items-center justify-content-center">
 							<img src={logo} alt="Logo" />
 						</div>
 						<div className="col-3 email">
-							<i className="far fa-envelope fa-2x" />
+              <button class="btn btn-link">
+                <i className="far fa-envelope fa-2x" />
+              </button>
 						</div>
 					</div>
 				</div>
 
-				{/* <div className="container desktop-view">
+				<div className="container desktop-view">
           <div className="row">
-            <div className="col-12 col-md-4 logo">
+            <div className="col-12 col-md-3 logo">
               <img src={logo} alt="Logo" />
             </div>
-            <div className="col-12 col-md-8 nav-links">
+            <div className="col-12 col-md-9 nav-links">
               <ul>
                 <li>
                   <a href="#">About</a>
@@ -45,7 +49,7 @@ class HeaderComponent extends Component {
               </ul>
             </div>
           </div>
-        </div> */}
+        </div>
 			</header>
 		);
 	}
