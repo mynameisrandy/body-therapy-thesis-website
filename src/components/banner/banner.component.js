@@ -5,7 +5,7 @@ import bannerImage from '../../assets/images/hero-image.png';
 class BannerComponent extends Component {
 	render() {
 		return (
-			<section className="hero-banner">
+			<section className="hero-banner" id="heroBanner">
 				<div className="container">
 					<div className="row">
 						<div className="col-12 col-md-6 hero-banner-text">

@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import './footer.component.css';
 
 class FooterComponent extends Component {
+
+  scrollToID = (id) => {
+    const scrollEl = document.getElementById('' + id + '');
+    scrollEl.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "start"
+    });
+  }
+
 	render() {
 		return (
 			<footer className="footer">
@@ -10,43 +20,43 @@ class FooterComponent extends Component {
 						<div className="col-12">
 							<ul className="nav-links">
 								<li>
-									<a href="#">About</a>
+									<a onClick={() => this.scrollToID('aboutScoll')}>About</a>
 								</li>
 								<li>
-									<a href="#">Features</a>
+									<a onClick={() => this.scrollToID('featureScoll')}>Features</a>
 								</li>
 								<li>
-									<a href="#">Technologies</a>
+									<a onClick={() => this.scrollToID('technologiesScoll')}>Technologies</a>
 								</li>
 								<li>
-									<a href="#">Creator</a>
+									<a onClick={() => this.scrollToID('creatorScoll')}>Creator</a>
 								</li>
 								<li>
-									<a href="#">Coming Soon</a>
+									<a onClick={() => this.scrollToID('comingSoonScoll')}>Coming Soon</a>
 								</li>
 							</ul>
 
 							<ul className="social-links">
 								<li>
-									<a href="#">Twitter</a>
+									<a href="https://twitter.com/">Twitter</a>
 								</li>
 								<li>
-									<a href="#">Instagram</a>
+									<a href="https://www.instagram.com/">Instagram</a>
 								</li>
 								<li>
-									<a href="#">Facebook</a>
+									<a href="https://www.facebook.com/">Facebook</a>
 								</li>
 							</ul>
 
 							<ul className="copyrights">
 								<li>
-                  <a href="#">&copy; 2018 Body Therapy</a>
+                  <a href="/">&copy; 2019 Body Therapy</a>
                 </li>
 								<li>
-                  <a href="#">Privacy Policy</a>
+                  <a href="/">Privacy Policy</a>
                 </li>
 								<li>
-                  <a href="#">Terms of Service</a>
+                  <a href="/">Terms of Service</a>
                 </li>
 							</ul>
 						</div>

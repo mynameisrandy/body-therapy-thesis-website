@@ -5,7 +5,7 @@ import './about-me.component.css';
 class AboutMeComponent extends Component {
 	render() {
 		return (
-			<section className="about-me">
+			<section className="about-me"  id="creatorScoll">
 				<div className="container">
 					<div className="row">
 						<div className="col-12">
@@ -14,7 +14,7 @@ class AboutMeComponent extends Component {
 					</div>
 					<div className="row about-me-cont">
 						<div className="col-12 col-md-4">
-							<img src={meImage} alt="Profile Image" />
+							<img src={meImage} alt="Profile" />
 						</div>
 						<div className="col-12 col-md-8">
 							<h2 className="title title-left">Randy Phalla</h2>

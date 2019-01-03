@@ -3,6 +3,16 @@ import logo from '../../assets/images/bt_logotype.png';
 import './header.component.css';
 
 class HeaderComponent extends Component {
+
+  scrollToID = (id) => {
+    const scrollEl = document.getElementById('' + id + '');
+    scrollEl.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "start"
+    });
+  }
+
 	render() {
 		return (
 			<header className="header">
@@ -32,19 +42,19 @@ class HeaderComponent extends Component {
             <div className="col-12 col-md-9 nav-links">
               <ul>
                 <li>
-                  <a href="#">About</a>
+                  <a onClick={() => this.scrollToID('aboutScoll')}>About</a>
                 </li>
                 <li>
-                  <a href="#">Features</a>
+                  <a onClick={() => this.scrollToID('featureScoll')}>Features</a>
                 </li>
                 <li>
-                 <a href="#">Technologies</a>
+                 <a onClick={() => this.scrollToID('technologiesScoll')}>Technologies</a>
                 </li>
                 <li>
-                  <a href="#">Creator</a>
+                  <a onClick={() => this.scrollToID('creatorScoll')}>Creator</a>
                 </li>
                 <li>
-                  <a href="#">Coming Soon</a>
+                  <a onClick={() => this.scrollToID('comingSoonScoll')}>Coming Soon</a>
                 </li>
               </ul>
             </div>

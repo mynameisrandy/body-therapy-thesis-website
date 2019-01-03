@@ -92,7 +92,7 @@ class App extends Component {
 
 					<BannerComponent />
 
-					<section className="about-us">
+					<section className="about-us" id="aboutScoll">
 						<div className="container">
 							<div className="row about-us justify-content-md-center">
 								<div className="col-12 col-md-10 col-lg-8">
@@ -108,19 +108,18 @@ class App extends Component {
 						</div>
 					</section>
 
-					<section className="features">
+					<section className="features" id="featureScoll">
 						<div className="container">
 							<div className="row">
 								<div className="col-12">
 									<h2 className="title">Features of Body Therapy</h2>
 								</div>
 							</div>
-
 							{getFeatures}
 						</div>
 					</section>
 
-					<section className="technologies">
+					<section className="technologies" id="technologiesScoll">
 						<div className="container">
 							<div className="row">
 								<div className="col-12">
@@ -133,19 +132,19 @@ class App extends Component {
 
 					<AboutMeComponent />
 
-					<section className="available-on">
+					<section className="available-on" id="comingSoonScoll">
 						<div className="container">
 							<div className="row">
 								<div className="col-12">
-									<h2 className="secondary-title">Available on</h2>
+									<h2 className="secondary-title">Coming Soon</h2>
 									<ul className="available-on-links">
 										<li>
-											<a href="#">
+											<a href="https://play.google.com/store?hl=en">
 												<img src={googlePlay} alt="Google Play" />
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="https://www.apple.com/ca/ios/app-store/">
 												<img src={appStore} alt="Apple Store" />
 											</a>
 										</li>
