@@ -1,5 +1,4 @@
 # Body Therapy Website
-
 > This final project is a thesis project for school for Interactive Media Specialist at Fanshawe College. The goal is to create a mobile or web application.
 
 # Getting Started
