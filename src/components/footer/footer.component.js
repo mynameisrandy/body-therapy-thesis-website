@@ -1,7 +1,12 @@
+//@flow
 import React, { Component } from 'react';
 import './footer.component.css';
 
-class FooterComponent extends Component {
+export type FooterProps = {};
+
+export type FooterState = {};
+
+class FooterComponent extends Component<FooterProps, FooterState> {
 
   scrollToID = (id) => {
     const scrollEl = document.getElementById('' + id + '');

@@ -1,8 +1,15 @@
+//@flow
 import React, { Component } from 'react';
 import logo from '../../assets/images/bt_logotype.png';
 import './header.component.css';
 
-class HeaderComponent extends Component {
+export type HeaderProps = {
+  showMobileMenu: Function
+};
+
+export type HeaderState = {};
+
+class HeaderComponent extends Component<HeaderProps, HeaderState> {
 
   scrollToID = (id) => {
     const scrollEl = document.getElementById('' + id + '');
@@ -20,7 +27,7 @@ class HeaderComponent extends Component {
 				<div className="container mobile-view">
 					<div className="row">
 						<div className="col-3 menu">
-              <button className="btn btn-link" aria-label="Menu">
+              <button className="btn btn-link" aria-label="Menu" onClick={this.props.showMobileMenu }>
                 <i className="fas fa-bars fa-2x" />
               </button>
 						</div>
@@ -28,9 +35,9 @@ class HeaderComponent extends Component {
 							<img src={logo} alt="Logo" />
 						</div>
 						<div className="col-3 email">
-              <button className="btn btn-link" aria-label="Email">
+              <a className="btn btn-link" aria-label="Email" href="mailto:randyphalla@gmail.com">
                 <i className="far fa-envelope fa-2x" />
-              </button>
+              </a>
 						</div>
 					</div>
 				</div>

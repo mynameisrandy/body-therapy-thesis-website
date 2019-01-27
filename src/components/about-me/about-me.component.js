@@ -1,9 +1,14 @@
+//@flow
 import React, { Component } from 'react';
-import meImage from '../../assets/images/Self-Portrait.png';
 import './about-me.component.css';
 import RandyPhallaResumePDF from '../../assets/files/randy-phalla-resume.pdf';
+import meImage from '../../assets/images/Self-Portrait.png';
 
-class AboutMeComponent extends Component {
+export type AboutMeProps = {};
+
+export type AboutMeState = {};
+
+class AboutMeComponent extends Component<AboutMeProps, AboutMeState> {
 	render() {
 		return (
 			<section className="about-me"  id="creatorScoll">

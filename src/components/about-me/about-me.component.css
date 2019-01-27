@@ -1,18 +1,22 @@
+.m-l-r-0 {
+  margin-left: 0;
+  margin-right: 0; }
+
 .title {
   font-family: "Lato", sans-serif;
-  font-weight: "900";
+  font-weight: 900;
   font-size: 1.8em;
   color: #0080ff; }
 
 .secondary-title {
   font-family: "Lato", sans-serif;
-  font-weight: "700";
+  font-weight: 700;
   font-size: 1.5em;
   color: #0080ff; }
 
 .body-text {
   font-family: "Open Sans", sans-serif;
-  font-weight: "300";
+  font-weight: 300;
   font-size: 1em;
   line-height: 1.8;
   color: #3f3a3a; }

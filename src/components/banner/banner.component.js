@@ -1,8 +1,13 @@
+//@flow
 import React, { Component } from 'react';
 import './banner.component.css';
 import bannerImage from '../../assets/images/hero-image.png';
 
-class BannerComponent extends Component {
+export type BannerProps = {};
+
+export type BannerState = {};
+
+class BannerComponent extends Component<BannerProps, BannerState> {
 	render() {
 		return (
 			<section className="hero-banner" id="heroBanner">

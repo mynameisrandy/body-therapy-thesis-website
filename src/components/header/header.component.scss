@@ -10,6 +10,14 @@
 		.menu {
 			text-align: left;
 
+      .btn {
+        transition: all 300ms ease;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
 			.fas {
 				margin-top: 4px;
 				color: $white;
@@ -26,6 +34,14 @@
 
 		.email {
 			text-align: right;
+
+      .btn {
+        transition: all 300ms ease;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
 
 			.far {
 				margin-top: 4px;
@@ -67,8 +83,19 @@
             margin-right: 10px;
 
             a {
-              text-decoration: none;
               color: $white;
+              font-size: 15px;
+              font-family: $open-sans;
+              font-weight: $font-weight-regular;
+              letter-spacing: 0.08em;
+              text-decoration: none;
+
+              transition: all 300ms ease;
+
+              &:hover {
+                cursor: pointer;
+                opacity: 0.5;
+              }
             }
           }
         }

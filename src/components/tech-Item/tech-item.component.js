@@ -1,7 +1,14 @@
+//@flow
 import React, { Component } from 'react';
 import './tech-item.component.css';
 
-class TechItemComponent extends Component {
+export type TechItemProps = {
+  image: String
+};
+
+export type TechItemState = {};
+
+class TechItemComponent extends Component<TechItemProps, TechItemState>  {
 	render() {
 		return (
 			<div className="col-12 col-sm-4 col-md-4 col-lg-3 tech-logo">

@@ -1,3 +1,4 @@
+//@flow
 import React, { Component } from 'react';
 
 import HeaderComponent from './components/header/header.component';
@@ -7,6 +8,7 @@ import TechItemComponent from './components/tech-Item/tech-item.component';
 import BannerComponent from './components/banner/banner.component';
 import AboutMeComponent from './components/about-me/about-me.component';
 
+import logo from './assets/images/bt_logotype.png';
 import messageTherapist from './assets/images/message-therapist.png';
 import reactLogo from './assets/images/react-logo.png';
 import reduxLogo from './assets/images/redux-logo.png';
@@ -16,9 +18,20 @@ import appStore from './assets/images/Download_on_the_App_Store_Badge_US-UK_RGB_
 
 import './App.css';
 
-class App extends Component {
+export type AppProps = {
+};
+
+export type AppState = {
+  isMobileMenu: boolean
+};
+
+class App extends Component<AppProps, AppState> {
 	constructor(props) {
 		super(props);
+
+    this.state = {
+      isMobileMenu: true
+    }
 
 		this.features = [
 			{
@@ -66,13 +79,66 @@ class App extends Component {
 		];
 	}
 
+  showMobileMenu = () => {
+    this.setState({
+      isMobileMenu: !this.state.isMobileMenu
+    })
+  }
+
+  scrollToID = (id) => {
+    const scrollEl = document.getElementById('' + id + '');
+    scrollEl.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "start"
+    });
+  }
+
 	render() {
+
+    const { isMobileMenu } = this.state;
 
 		return (
 
 			<div>
 
-				<HeaderComponent />
+        <div className={"sideMenu" + (isMobileMenu ? ' is-active' : '' )}>
+          <div className={"sideMenu-content" + (isMobileMenu ? ' is-active' : '')}>
+            <div className="row m-l-r-0">
+              <div className="col-8">
+                <img className="logo" src={logo} alt="Logo" />
+              </div>
+              <div className="col-4 text-right">
+                <button className="btn close-btn" onClick={this.showMobileMenu}>
+                  <i className="far fa-times-circle fa-2x"></i>
+                </button>
+              </div>
+            </div>
+            <div className="row m-l-r-0">
+              <div className="col-xs-12">
+                <ul className="sideMenu-links">
+                  <li className="sideMenu-link">
+                    <a onClick={() => this.scrollToID('aboutScoll')}>About</a>
+                  </li>
+                  <li className="sideMenu-link">
+                    <a onClick={() => this.scrollToID('featureScoll')}>Features</a>
+                  </li>
+                  <li className="sideMenu-link">
+                    <a onClick={() => this.scrollToID('technologiesScoll')}>Technologies</a>
+                  </li>
+                  <li className="sideMenu-link">
+                    <a onClick={() => this.scrollToID('creatorScoll')}>Creator</a>
+                  </li>
+                  <li className="sideMenu-link">
+                    <a onClick={() => this.scrollToID('comingSoonScoll')}>Coming Soon</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+				<HeaderComponent showMobileMenu={this.showMobileMenu} />
 
 				<main className="main-content">
 					<h2 className="hidden">Main Content</h2>
@@ -154,6 +220,7 @@ class App extends Component {
 							</div>
 						</div>
 					</section>
+
 				</main>
 
 				<FooterComponent />
